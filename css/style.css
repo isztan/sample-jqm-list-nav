@@ -1,0 +1,61 @@
+/*
+ * Copyright (c) 2012, Intel Corporation. All rights reserved.
+ * File revision: 15 October 2012
+ * Please see http://software.intel.com/html5/license/samples 
+ * and the included README.md file for license terms and conditions.
+ */
+
+
+/* hacks to get smoother page transition, esp on older Androids */
+.ui-page {
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+    -webkit-transform: translate3d(0,0,0); 
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    
+}
+
+/* container div to position photo + caption within */
+#photoContainer {
+    position: relative;
+    padding: 0px;
+    /* override jQuery Mobile content padding of 15px */
+    margin: -15px;
+    /* dark background if photo doesn't fill entire width */
+    background: #121212; /* fall back color if gradient is not supported */
+    background-image: -webkit-linear-gradient(#111, #282828, #111);
+    background-image: -moz-linear-gradient(#111, #282828, #111);
+    background-image: -ms-linear-gradient(#111, #282828, #111);
+    background-image: -o-linear-gradient(#111, #282828, #111);    
+    background-image: linear-gradient(#111, #282828, #111);    
+    /* center photo */
+    text-align: center;
+}
+
+/* size photo to min(screen width, original photo width) */
+#photo {
+    max-width: 100%;
+}
+
+/* position caption to bottom right corner of photo (with 10px padding) */
+#photoCaption {
+    position: absolute;
+    bottom: 25px; /* accounting for -15px margin for #photoContainer */
+    right: 10px;
+    font-size: 10px;
+    color: white;
+}

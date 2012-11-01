@@ -1,0 +1,8 @@
+{
+  "repository": "sample-jqm-listnav",
+  "caption": "jQM List Nav",
+  "tooltip": "jQuery Mobile scaffold using list-based navigation.",
+  "description": "This sample is a multi-page jQuery Mobile scaffold using list-based navigation. It can help familiarize you with using jQuery Mobile pages and basic widgets like toolbars and listviews.",
+  "articleurl": "http://software.intel.com/en-us/articles/jquery-mobile-list-navigation",
+  "category": "HTML5"
+}

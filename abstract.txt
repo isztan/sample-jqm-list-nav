@@ -1,0 +1,1 @@
+This sample is a multi-page jQuery Mobile scaffold using list-based navigation. It can help familiarize you with using jQuery Mobile pages and basic widgets like toolbars and listviews.

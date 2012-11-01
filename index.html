@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+     * Copyright (c) 2012, Intel Corporation. All rights reserved.
+     * File revision: 15 October 2012
+     * Please see http://software.intel.com/html5/license/samples 
+     * and the included README.md file for license terms and conditions.
+    -->
+    <meta name="copyright" content="&copy; 2012, Intel Corporation. All rights reserved." />
+
+    <!-- stylesheets -->
+    <!-- note: use jquery.mobile-1.1.1.min.css for production -->
+    <link rel="stylesheet" type="text/css" href="vendor/jquery.mobile/jquery.mobile-1.1.1.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- scripts -->
+    <!-- note: use jquery-1.8.0.min.js & jquery.mobile-1.1.1.min.js for production -->
+    <script type="text/javascript" src="vendor/jquery/jquery-1.8.0.js"></script>
+    <script type="text/javascript" src="vendor/jquery.mobile/jquery.mobile-1.1.1.js"></script>
+    
+    <!-- title of app -->
+    <title>List Navigation</title>
+
+    <!-- mobile layout sized appropriately to viewport width and not zoomable -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    
+</head>
+
+<body>
+
+    <!-- home page -->
+    <div data-role="page" id="home">
+    
+        <!-- persistent header -->
+        <div data-role="header" data-id="listnav-header">
+            <h1>List Navigation</h1>
+        </div>
+        
+        <!-- main content -->
+        <div data-role="content">
+            <!-- photo header -->
+            <div id="photoContainer">
+                <img id="photo" src="images/photo.jpg"></img>
+                <div id="photoCaption">
+                    <a href="http://www.flickr.com/photos/msvg/4665338572/">original photo</a> by Michael Gil
+                </div>
+            </div>
+            <!-- list navigation menu -->			
+            <ul data-role="listview">
+                <li><a href="#section1" data-transition="slide">
+                    <h3>Section 1</h3>
+                    <p>Some short description.</p>
+                </a></li>
+                <li><a href="#section2" data-transition="slide">
+                    <h3>Section 2</h3>
+                    <p>Some short description.</p>
+                </a></li>
+                <li><a href="#section3" data-transition="slide">
+                    <h3>Section 3</h3>
+                    <p>Some short description.</p>
+                </a></li>
+                <li><a href="#section4" data-transition="slide">
+                    <h3>Section 4</h3>
+                    <p>Some short description.</p>
+                </a></li>
+            </ul>
+        </div>
+        
+        <!-- footer optional and omitted -->
+        
+    </div>
+    
+    <!-- section 1 -->
+    <div data-role="page" id="section1" data-add-back-btn="true">
+
+        <!-- header -->
+        <!-- same data-id as home page for persistent toolbar -->
+        <!-- back button added automatically by jquery mobile by specifying data-add-back-btn above -->
+        <div data-role="header" data-id="listnav-header">
+            <h1>List Navigation</h1>
+        </div>
+        
+        <!-- content -->
+        <div data-role="content">
+            <p>Hello! I'm Section 1.</p>
+        </div>
+        
+    </div>
+
+    <!-- section 2 -->
+    <div data-role="page" id="section2" data-add-back-btn="true">
+    
+        <!-- header -->
+        <!-- same data-id as home page for persistent toolbar -->
+        <!-- back button added automatically by jquery mobile by specifying data-add-back-btn above -->
+        <div data-role="header" data-id="listnav-header">
+            <h1>List Navigation</h1>
+        </div>
+        
+        <!-- content -->
+        <div data-role="content">
+            <p>Hello! I'm Section 2.</p>
+        </div>
+        
+    </div>
+
+    <!-- section 3 -->
+    <div data-role="page" id="section3" data-add-back-btn="true">
+    
+        <!-- header -->
+        <!-- same data-id as home page for persistent toolbar -->
+        <!-- back button added automatically by jquery mobile by specifying data-add-back-btn above -->
+        <div data-role="header" data-id="listnav-header">
+            <h1>List Navigation</h1>
+        </div>
+        
+        <!-- content -->
+        <div data-role="content">
+            <p>Hello! I'm Section 3.</p>
+        </div>
+        
+    </div>
+
+    <!-- section 4 -->
+    <div data-role="page" id="section4" data-add-back-btn="true">
+    
+        <!-- header -->
+        <!-- same data-id as home page for persistent toolbar -->
+        <!-- back button added automatically by jquery mobile by specifying data-add-back-btn above -->
+        <div data-role="header" data-id="listnav-header">
+            <h1>List Navigation</h1>
+        </div>
+        
+        <!-- content -->
+        <div data-role="content">
+            <p>Hello! I'm Section 4.</p>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

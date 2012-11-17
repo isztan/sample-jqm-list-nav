@@ -8,8 +8,13 @@ License Information Follows
 * index.html
 * css/style.css
 * config.xml
+* sample_icon_72x72.png
+* abstract.txt
+* app.json
+* screenshot.png
+* README.md
 
-Copyright (c) 2012, Intel Corporation
+Copyright (c) 2012, Intel Corporation. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, 
 are permitted provided that the following conditions are met:
@@ -69,12 +74,3 @@ Licensed under the Creative Commons Attribution 3.0 license.
 
 * original: http://www.flickr.com/photos/msvg/4665338572/  
 * license:  http://creativecommons.org/licenses/by/3.0/us/
-
-
-Default Application Icon for Packaging
---------------------------------------
-* sample_icon_72x72.png
-
-Created by Intel Corporation, licensed under the Creative Commons Attribution license.
-
-* license: http://creativecommons.org/licenses/by/3.0/us/
